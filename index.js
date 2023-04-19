@@ -1,15 +1,17 @@
-import express from "express";
+import express from 'express'
 
-console.log("hello izzy");
+console.log('hello izzy')
 
-const server = express();
+const server = express()
 
-server.get("/", (req, res) => {
-  res.send("POWER!");
-});
+server.get('/', (req, res) => {
+  res.send('POWER!')
+})
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080
 
 server.listen(PORT, () => {
-  console.log(`server rennt auf ${PORT}.`);
-});
+  console.log(`server rennt auf ${PORT}.`)
+})
+
+export default server
